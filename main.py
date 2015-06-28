@@ -1,4 +1,12 @@
 from flask import Flask, send_from_directory
+from pymongo import MongoClient
+
+# default to http://localhost:27017
+client = MongoClient()
+db = client.database
+books = db.books
+pages = db.pages
+
 app = Flask(__name__)
 
 import main_page
@@ -12,4 +20,4 @@ def send_css(path):
     return send_from_directory('css', path)
 
 if __name__ == "__main__":
-    app.run()
+	app.run()
