@@ -13,15 +13,15 @@ def render_thumbnails(db):
     cnt += 1
     if cnt == 8:
       cnt = 1
-      thumb_templ += '</tr><tr><td><a href="?book=' + \
+      thumb_templ += '</tr><tr><td><a href="page/' + \
                      result['book_id'] + \
-                     ',page=1"><div class="thumbnail-image" style="background:url(\'' + \
+                     '/1"><div class="thumbnail-image" style="background:url(\'' + \
                      thumbnail_url + \
                      '\');background-size:contain"></div></a><p>' + \
                      result['title']+'</p></td>'
     else:
-      thumb_templ += '<td><a href="?book='+result['book_id'] + \
-                     ',page=1"><div class="thumbnail-image" style="background:url(\'' + \
+      thumb_templ += '<td><a href="page/'+result['book_id'] + \
+                     '/1"><div class="thumbnail-image" style="background:url(\'' + \
                      thumbnail_url + '\');background-size:contain"></div></a><p>'+result['title']+'</p></td>'
   thumb_templ += '</tr>'
   return thumb_templ
