@@ -20,15 +20,13 @@ def send_css(path):
     if path[-3:] == 'css':
         return send_from_directory('css', path)
     if path[-3:] == 'jpg' or path[-3:] == 'png':
-        print "stuff"
         return send_from_directory('', path)
     print path
     return send_from_directory('fonts', path)
 
-@app.route("/page?pageId=<pageId>")
-def getPage(pageId):
-  print "runnning"
-  return page_viewer.main(pageId)
+@app.route("/page/<book_id>/<page_id>")
+def getPage(book_id, page_id):
+  return page_viewer.main(db, book_id, page_id)
 
 def setup_db():
     books.drop()
@@ -53,7 +51,7 @@ def setup_db():
 
     if pages.count() == 0:
         thum_0 = {'book_id': '558fbdd7207d5be0f4f1c621', 'page': 0,
-                    'url':'images/558fbdd7207d5be0f4f1c621_0.jpg',
+                    'url':'/images/558fbdd7207d5be0f4f1c621_0.jpg',
                     'num_copies': 1}
         page_1 = {'book_id': '558fbdd7207d5be0f4f1c621', 'page': 1,
                     'url':'https://raw.githubusercontent.com/Ali-Amir/pagebypage/master/books/558fbdd7207d5be0f4f1c621_1.jpg',
@@ -70,7 +68,7 @@ def setup_db():
         pgs = [thum_0, page_1, page_2, page_3, page_4]
         for idx in range(1, 14):
             thum = {'book_id': '%d'%idx, 'page': 0,
-                    'url':'images/%d_0.jpg'%idx,
+                    'url':'/images/%d_0.jpg'%idx,
                     'num_copies': 1}
             pgs.append(thum)
         pages.insert_many(pgs)
