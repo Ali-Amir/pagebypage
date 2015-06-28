@@ -46,8 +46,12 @@ footer {
 }
 
 .about-page {
-  border-top: 10px solid #597272;
+  border-top: 10px solid #FFFFFF;
   box-shadow: 5px 5px 20px black;
+}
+
+.thumbnail-table {
+  margin: 2%;
 }
 
 #header-logo {
@@ -75,9 +79,23 @@ footer {
   font-size: 130%;
 }
 
-#desc-1 {
-  background-size: 100% 102%;
-  height: 800px;
+.thumbnail-image {
+  margin-top: 0%;
+  box-shadow: 5px 5px 15px black;
+  height: 271px;
+  width: 186px;
+}
+
+.thumbnail-table td, tr {
+  padding: 30px;
+  width: 188px;
+}
+
+.thumbnail-table p {
+  font-weight: bold;
+  text-align: left;
+  width: 188px;
+  margin-top: 3%;
 }
 
 #desc-2 {
@@ -89,3 +107,4 @@ footer {
   height: 150px;
   text-align: center;
 }
+
