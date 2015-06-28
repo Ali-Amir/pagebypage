@@ -17,7 +17,10 @@ def main():
 
 @app.route("/<path:path>")
 def send_css(path):
-    return send_from_directory('css', path)
+    if path[-3:] == 'css':
+        return send_from_directory('css', path)
+    print path
+    return send_from_directory('fonts', path)
 
 if __name__ == "__main__":
 	app.run()
