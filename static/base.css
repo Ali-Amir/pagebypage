@@ -1,4 +1,4 @@
-
+  
 @font-face {
   font-family: BIGJOHN;
   src: url(fonts/BIGJOHN.otf);
@@ -88,4 +88,12 @@ footer {
 #desc-3 {
   height: 150px;
   text-align: center;
+}
+
+.arrow-container {
+  padding-left: 120px;
+}
+
+#main-content {
+  margin-top: 50px;
 }
