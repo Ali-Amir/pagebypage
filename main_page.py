@@ -1,4 +1,4 @@
-from flask import Flask
+from flask import render_template
 
 def main():
-    return "Hello World!"
+    return render_template('index.html')

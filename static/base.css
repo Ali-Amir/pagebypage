@@ -1,0 +1,203 @@
+
+@font-face {
+  font-family: BIGJOHN;
+  src: url(fonts/BIGJOHN.otf);
+}
+@font-face {
+  font-family: SlimJoe;
+  src: url(fonts/SlimJoe.otf);
+}
+@font-face {
+  font-family: KlinicSlabLight;
+  src: url(fonts/KlinicSlabLight.otf);
+}
+@font-face {
+  font-family: KlinicSlabLightIt;
+  src: url(fonts/KlinicSlabLightIt.otf);
+}
+@font-face {
+  font-family: DenseRegular;
+  src: url(fonts/Dense-Regular.otf);
+}
+@font-face {
+  font-family: KlinicSlabMedium;
+  src: url(fonts/KlinicSlabMedium.otf);
+}
+
+html, body, h1, h2, p, header {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+li {
+  list-style-type: none;
+}
+
+body {
+  background: url(images/background-transparent.jpg) repeat center;
+  background-color: white;
+}
+
+nav {
+  text-align: right;
+  display: block;
+
+  padding-top: 10px;
+  padding-left: 200px;
+  margin-right: 340px;
+}
+
+nav li {
+  display: inline;
+  padding: 10px 30px 10px 30px;
+  font-family: DenseRegular;
+  font-size: 25px;
+
+  border-bottom-right-radius: 0.2em;
+  border-bottom-left-radius: 1.2em;
+}
+
+nav li:hover {
+  background: #ACB9B9;
+}
+
+footer {
+  padding: 30px;
+  text-align: center;
+
+  font-style: italic;
+}
+
+.about-page {
+  border-top: 10px solid #597272;
+}
+
+.team-page {
+  border-top: 10px solid #597272;
+}
+
+#header-logo {
+  text-align: right;
+  background: url(images/hand.jpg) no-repeat bottom left;
+  background-color: #ffffff;
+  background-size: 1000px 600px;
+  height: 800px;
+}
+
+#header-logo h1 {
+  margin-top: 200px;
+  margin-right: 300px;
+  font-family: SlimJoe;
+
+  font-size: 100px;
+}
+#header-logo h1 b {
+  font-family: BIGJOHN;
+  font-weight: normal;
+  color: #E63E00;
+}
+
+#header-logo h2 {
+  margin-top: -10px;
+  margin-right: 300px;
+  font-family: KlinicSlabLight;
+
+  font-size: 23px;
+}
+
+#header-logo blockquote {
+  margin-top: 350px;
+
+  font-family: KlinicSlabLightIt;
+  font-size: 22px;
+}
+
+#personal-image {
+  margin-left: 400px;
+
+  width: 200px;
+  height: 200px;
+  border: 10px solid  #E63E00;
+  border-radius: 50%;
+  background: url(images/profile.jpg) no-repeat center;
+  background-size: 80%;
+  background-color: white;
+}
+
+#personal-image-container {
+  display: table-cell;
+  position: relative;
+  z-index: 0;
+}
+
+#personal-description-container {
+  vertical-align: top;
+  display: table-cell;
+  position: relative;
+  z-index: -1;
+}
+
+#personal-description {
+  margin-left: -100px;
+  margin-top: 0px;
+  padding: 55px 120px 55px 250px;
+  border: 10px solid  #E63E00;
+  border-top-right-radius: 120px;
+  border-bottom-right-radius: 250px;
+  background: #C1CACA;
+  font-family: KlinicSlabLight;
+}
+
+#personal-description h1 {
+  font-size: 25px;
+}
+
+#personal-description p {
+  margin-top: 10px;
+  font-size: 20px;
+}
+
+#team-info {
+}
+
+#desc-1 {
+  background: url(images/patent.jpg) repeat center;
+  background-size: 100% 102%;
+  height: 800px;
+}
+
+#desc-1 p {
+  padding-top: 180px;
+  margin-left: 50px;
+  font-family: KlinicSlabLight;
+  font-size: 33px;
+  line-height: 80px;
+}
+
+#desc-2 {
+  background: url(images/multi-color.png) no-repeat center;
+  height: 600px;
+  text-align: right;
+}
+
+#desc-2 p {
+  padding-top: 200px;
+  margin-right: 100px;
+  font-family: KlinicSlabMedium;
+  font-size: 30px;
+  line-height: 50px;
+}
+
+#desc-3 {
+  height: 150px;
+  text-align: center;
+}
+
+#desc-3 p {
+  padding-top: 50px;
+  margin-right: 100px;
+  font-family: KlinicSlabMedium;
+  font-size: 40px;
+  line-height: 50px;
+}
